@@ -15,4 +15,10 @@ Route::get('/', function () {
     return view('welcome');
 });
 
-Route::resource('joueurs', 'JoueursController');
+Route::resource('enigmes', 'EnigmeController');
+
+Route::resource('equipes', 'EquipeController');
+
+Auth::routes();
+
+Route::get('/home', 'HomeController@index')->name('home');
