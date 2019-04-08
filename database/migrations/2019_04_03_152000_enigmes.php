@@ -15,11 +15,9 @@ class Enigmes extends Migration
     {
         Schema::create('enigmes', function (Blueprint $table) {
             $table->increments('id');
-            $table->string('consignes');
             $table->string('nom');
             $table->string('libelle');
             $table->string('code_reponse');
-            $table->string('imagepath');
             $table->unsignedInteger('equipe_id');
             $table->foreign('equipe_id')->references('id')->on('equipes');
             $table->string('token');

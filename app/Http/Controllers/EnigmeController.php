@@ -24,7 +24,7 @@ class EnigmeController extends Controller
      */
     public function create()
     {
-        //
+        
     }
 
     /**

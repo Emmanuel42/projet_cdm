@@ -15,19 +15,19 @@
 
 	</head>
 	
-	<body>
+	<body style="background-color: ">
 		
 		<div class="container center-align">
 			
 			<div class="title">
 			
-                <h1>Enigme de la Cour des Matières</h1>
+                <h2 style="text-decoration:underline black">Enigme de la Cour des Matières</h2>
                     
             </div>
             
             <div>
-            <p>But du jeu : 
-            Vous devez trouver 3 mots-clés qui vous donneront le mot de passe nécessaire pour débloquer une vidéo.
+            <p style = "text-decoration: underline black">But du jeu :</p> 
+            <p>Vous devez trouver 3 mots-clés qui vous donneront le mot de passe nécessaire pour débloquer une vidéo.
             Pour trouver les mots, vous devrez résoudre 3 énigmes.
             Vous n'avez pas accès aux bâtiments. Toutes les énigmes peuvent être résolues dans la Cour des Matières.
             </p>
@@ -36,17 +36,32 @@
             
             <div>
             
-            	<p>Avant de commencer, vous devez choisir la couleur de votre équipe.</p>
+            <p>Avant de commencer, vous devez choisir la couleur de votre équipe.</p>
             
-            	<a class="waves-effect waves-light btn-large blue" style="margin-bottom : 20px; width: 300px">Equipe Bleue</a>
-            	</br>
-            	<a class="waves-effect waves-light btn-large red" style="margin-bottom : 20px; width: 300px">Equipe Rouge</a>
-            	</br>
-            	<a class="waves-effect waves-light btn-large green" style="margin-bottom : 20px; width: 300px">Equipe Verte</a>
-            	</br>
-            	<a class="waves-effect waves-light btn-large yellow" style="margin-bottom : 20px; width: 300px">Equipe Jaune</a>
-            	</br>
-            	<a class="waves-effect waves-light btn-large purple" style="margin-bottom : 20px; width: 300px">Equipe Violette</a>
+			<form action="{{ url('/obsbl') }}" method="POST">
+				{{ csrf_field() }}
+            	<input class="waves-effect waves-light btn-large blue" style="width: 300px; margin-bottom:10px" type="submit" name="equipebl" value="Equipe Bleue">	
+            </form>
+          
+            <form action="{{ url('/obsro') }}" method="POST">
+				{{ csrf_field() }}
+            	<input class="waves-effect waves-light btn-large red" style="width: 300px; margin-bottom:10px" type="submit" name="equipero" value="Equipe Rouge">
+            </form>
+          
+            <form action="{{ url('/obsve') }}" method="POST">
+				{{ csrf_field() }}
+            	<input class="waves-effect waves-light btn-large green" style="width: 300px; margin-bottom:10px" type="submit" name="equipeve" value="Equipe Verte">
+            </form>
+            
+            <form action="{{ url('/obsja') }}" method="POST">
+				{{ csrf_field() }}
+            	<input class="waves-effect waves-light btn-large yellow" style="width: 300px; margin-bottom:10px" type="submit" name="equipeja" value="Equipe Jaune">
+            </form>
+            
+            <form action="{{ url('/obsvi') }}" method="POST">
+				{{ csrf_field() }}            
+            	<input class="waves-effect waves-light btn-large purple" style="width: 300px; margin-bottom:10px" type="submit" name="equipevi" value="Equipe Violette">
+            </form>
             </div>
 
 		</div>
