@@ -11,6 +11,9 @@
 |
 */
 
+use Illuminate\Routing\Route;
+use Illuminate\Support\Facades\Auth;
+
 Route::get('/', function () {
     return view('accueil');
 });
@@ -26,6 +29,7 @@ Route::get('/home', 'HomeController@index')->name('home');
 Route::post('/obsbl', function(){
     return view('ebl1');
 });
+
     Route::post('/coobl', function(){
         return view('ebl2');
     });

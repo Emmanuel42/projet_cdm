@@ -17,7 +17,6 @@ class Equipes extends Migration
             $table->increments('id');
             $table->string('couleur');
             $table->string('code_final');
-            $table->string('token');
             $table->timestamp('created_at')->nullable();
         });
     }
