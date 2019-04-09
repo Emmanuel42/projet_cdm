@@ -39,7 +39,7 @@ Route::post('/obsbl', function(){
             Route::post('/inibl', function(){
                 return view('ebl4');
             });
-                Route::post('/vid', function(){
+                Route::post('/vidbl', function(){
                     return view('ebl5');
                 });
     
@@ -56,7 +56,7 @@ Route::post('/obsro', function(){
             Route::post('/iniro', function(){
                 return view('ero4');
             });
-                Route::post('/vid', function(){
+                Route::post('/vidro', function(){
                     return view('ero5');
                 });
 
@@ -73,7 +73,7 @@ Route::post('/obsve', function(){
             Route::post('/inive', function(){
                 return view('eve4');
             });
-                Route::post('/vid', function(){
+                Route::post('/vidve', function(){
                     return view('eve5');
                 });
 
@@ -90,7 +90,7 @@ Route::post('/obsja', function(){
             Route::post('/inija', function(){
                 return view('eja4');
             });
-                Route::post('/vid', function(){
+                Route::post('/vidja', function(){
                     return view('eja5');
                 });
 
@@ -107,7 +107,7 @@ Route::post('/obsvi', function(){
             Route::post('/inivi', function(){
                 return view('evi4');
             });
-                Route::post('/vid', function(){
+                Route::post('/vidvi', function(){
                     return view('evi5');
                 });
     
