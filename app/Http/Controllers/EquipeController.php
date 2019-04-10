@@ -14,9 +14,9 @@ class EquipeController extends Controller
      */
     public function index()
     {
-        $toto = 'toto';//Equipe::all();
-        //return $toto;
-        return view('home', ['toto' => $toto]);
+        $equipes = Equipe::all();
+       //return $equipes;
+        return view('accueil')->with('equipe', $equipes);
     }
 
     /**

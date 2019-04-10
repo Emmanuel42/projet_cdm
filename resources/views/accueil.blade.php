@@ -15,13 +15,16 @@
                     </thead>
                     
                     <tbody>
-                    
-                  <!--   @foreach($toto as $equipe) -->
+
+                  		@foreach($equipe as $valeur)
+                  		
                     	<tr>
-                            <td>toto</td>
-<!--                             <td>{{ $equipe->couleur }}</td> -->
+                            <td>{{ $valeur->id }}</td>
+                            <td>{{ $valeur->couleur }}</td>
                         </tr>
-                   <!--  	@endforeach-->
+                        
+                   		@endforeach
+                   		
                     </tbody>
                     
                  </table>

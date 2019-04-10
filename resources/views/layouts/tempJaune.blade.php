@@ -32,7 +32,7 @@
     	 	
     	 	<div>
     	 
-    	 		<img src="img/plancdm.png" class="img-fluid border border-warning" style="padding:50px; border-width: 3px ! important;" alt="Plan de la cour des matières" /></img>
+    	 		<img src="img/plancdm2.png" class="img-fluid border border-warning" style="padding:50px; border-width: 3px ! important;" alt="Plan de la cour des matières" /></img>
                    
 		 	</div>
 		 	

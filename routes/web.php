@@ -10,10 +10,12 @@
 | contains the "web" middleware group. Now create something great!
 |
 */
+//Accueil
+Route::get('/', 'EquipeController@index');
 
-Route::get('/', function () {
-    return view('accueil');
-});
+// Route::get('/', function () {
+//     return view('accueil');
+// });
 
 Route::resource('enigmes', 'EnigmeController');
 Route::resource('equipes', 'EquipeController');
@@ -25,8 +27,7 @@ Route::get('/home', 'HomeController@index')->name('home');
 Route::get('enigme', 'EnigmeController@create');
 Route::post('enigme', 'EnigmeController@store');
 
-//Accueil
-Route::get('equipes', 'EquipeController@index');
+
 
 
 //route équipe bleue

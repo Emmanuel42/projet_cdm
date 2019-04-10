@@ -34,7 +34,7 @@
     	 	
     	 	<div>
     	 
-    	 		<img src="img/plancdm.png" class="img-fluid" style="padding:50px; border: 3px solid purple ! important;" alt="Plan de la cour des matières" /></img>
+    	 		<img src="img/plancdm2.png" class="img-fluid" style="padding:50px; border: 3px solid purple ! important;" alt="Plan de la cour des matières" /></img>
                    
 		 	</div>
 		 	
