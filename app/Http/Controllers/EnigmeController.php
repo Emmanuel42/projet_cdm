@@ -7,7 +7,19 @@ use App\Enigme;
 
 class EnigmeController extends Controller
 {
-    /**
+    
+//     public function enigmeVal(EnigmeValRequest $request)
+//     {
+//         $enigme = new Enigme;
+        
+//         $enigme->code_reponse = $request->code_reponse;
+        
+//         $enigme->save();
+        
+//         return view ('ebl2');
+//     }
+    
+/**
      * Display a listing of the resource.
      *
      * @return \Illuminate\Http\Response
@@ -24,7 +36,7 @@ class EnigmeController extends Controller
      */
     public function create()
     {
-        
+        return view('ebl2');
     }
 
     /**
@@ -35,8 +47,69 @@ class EnigmeController extends Controller
      */
     public function store(Request $request)
     {
-        //
-    }
+        
+        $valider = $request->input('enigme1bl');
+        
+        if ($valider == 'DESIGN'){
+            
+            return view('ebl2');
+            
+        }
+        else {
+            
+            return view('ebl1');
+            
+        }     
+        
+   }
+   
+   public function validE2(Request $request){
+       
+       $valider2 = $request->input('enigme2bl');
+       
+       if ($valider2 == 'TECHNOLOGIE'){
+           
+           return view('ebl3');
+           
+       }
+       else {
+           
+           return view('ebl2');
+           
+       }
+   }
+   
+   public function validE3(Request $request){
+       
+       $valider3 = $request->input('enigme3bl');
+       
+       if ($valider3 == 'ACADEMIE'){
+           
+           return view('ebl4');
+           
+       }
+       else {
+           
+           return view('ebl3');
+           
+       }
+   }
+   
+   public function validE4(Request $request){
+       
+       $valider4 = $request->input('enigme4bl');
+       
+       if ($valider4 == 'DTA'){
+           
+           return view('ebl5');
+           
+       }
+       else {
+           
+           return view('ebl4');
+           
+       }
+   }
 
     /**
      * Display the specified resource.

@@ -3,7 +3,7 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
-use App\Enigme;
+use App\Equipe;
 
 class EquipeController extends Controller
 {
@@ -14,7 +14,9 @@ class EquipeController extends Controller
      */
     public function index()
     {
-        //
+        $toto = 'toto';//Equipe::all();
+        //return $toto;
+        return view('home', ['toto' => $toto]);
     }
 
     /**
@@ -46,7 +48,8 @@ class EquipeController extends Controller
      */
     public function show($id)
     {
-        //
+
+            
     }
 
     /**

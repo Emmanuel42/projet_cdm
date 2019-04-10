@@ -6,8 +6,8 @@
 
     <form action="{{ url('inivi') }}" method="POST">
         {{ csrf_field() }}
-        <label for="enigme">Lorsque vous avez trouvé le mot, inscrivez-le ci-dessous puis validez pour passer à l'énigme suivante.</label><br>
-    	<input id="enigme" type="text" name="" placeholder="Votre réponse">
+        <label for="enigme3vi">Lorsque vous avez trouvé le mot, inscrivez-le ci-dessous puis validez pour passer à l'énigme suivante.</label><br>
+    	<input id="enigme3vi" type="text" name="enigme3vi" placeholder="Votre réponse">
     	<button type="submit" style="margin-bottom:30px">Valider</button>
 	</form>
 

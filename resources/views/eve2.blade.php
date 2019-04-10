@@ -6,8 +6,8 @@
 
     <form action="{{ url('refve') }}" method="POST">
         {{ csrf_field() }}
-        <label for="enigme">Lorsque vous avez trouvé le mot, inscrivez-le ci-dessous puis validez pour passer à l'énigme suivante.</label><br>
-    	<input id="enigme" type="text" name="nom" placeholder="Votre réponse">
+        <label for="enigme2ve">Lorsque vous avez trouvé le mot, inscrivez-le ci-dessous puis validez pour passer à l'énigme suivante.</label><br>
+    	<input id="enigme2ve" type="text" name="enigme2ve" placeholder="Votre réponse">
     	<button type="submit" style="margin-bottom:30px">Valider</button>
 	</form>
 

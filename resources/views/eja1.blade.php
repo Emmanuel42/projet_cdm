@@ -5,8 +5,8 @@
 
     <form action="{{ url('cooja') }}" method="POST">
         {{ csrf_field() }}
-        <label for="enigme">Lorsque vous avez trouvé le mot, inscrivez-le ci-dessous puis validez pour passer à l'énigme suivante.</label><br>
-    	<input id="enigme" type="text" name="nom" placeholder="Votre réponse">
+        <label for="enigme1ja">Lorsque vous avez trouvé le mot, inscrivez-le ci-dessous puis validez pour passer à l'énigme suivante.</label><br>
+    	<input id="enigme1ja" type="text" name="enigme1ja" placeholder="Votre réponse">
     	<button type="submit" style="margin-bottom:30px">Valider</button>
 	</form>
 @endsection

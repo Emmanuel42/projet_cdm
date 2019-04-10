@@ -22,23 +22,25 @@ Auth::routes();
 
 Route::get('/home', 'HomeController@index')->name('home');
 
-//route équipe bleue
-Route::post('/obsbl', function(){
-    return view('ebl1');
-});
+Route::get('enigme', 'EnigmeController@create');
+Route::post('enigme', 'EnigmeController@store');
 
-    Route::post('/coobl', function(){
-        return view('ebl2');
-    });
-        Route::post('/refbl', function(){
-            return view('ebl3');
-        });
-            Route::post('/inibl', function(){
-                return view('ebl4');
-            });
-                Route::post('/vidbl', function(){
-                    return view('ebl5');
-                });
+//Accueil
+Route::get('equipes', 'EquipeController@index');
+
+
+//route équipe bleue
+Route::post('/obsbl', 'EnigmeController@store');
+
+    Route::post('/coobl', 'EnigmeController@validE2');
+
+        Route::post('/refbl', 'EnigmeController@validE3');
+            
+            Route::post('/inibl', 'EnigmeController@validE4');
+
+//                 Route::post('/vidbl', function(){
+//                     return view('ebl5');
+//                 });
     
 //route équipe rouge
 Route::post('/obsro', function(){
