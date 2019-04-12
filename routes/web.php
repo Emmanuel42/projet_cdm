@@ -13,31 +13,32 @@
 //Accueil
 Route::get('/', 'EquipeController@index');
 
-// Route::get('/', function () {
-//     return view('accueil');
-// });
+Route::get('/obsbl', 'EquipeController@equipeBl');
+Route::post('/obsbl', 'EquipeController@equipeBl');
+
+// Route::get('/coobl', 'EquipeController@equipeBl2');
+// Route::post('/coobl', 'EquipeController@equipeBl2');
 
 Route::resource('enigmes', 'EnigmeController');
 Route::resource('equipes', 'EquipeController');
 
 Auth::routes();
 
-Route::get('/home', 'HomeController@index')->name('home');
+//Route::get('/home', 'HomeController@index')->name('home');
 
 Route::get('enigme', 'EnigmeController@create');
 Route::post('enigme', 'EnigmeController@store');
 
 
-
-
 //route équipe bleue
-Route::post('/obsbl', 'EnigmeController@store');
+Route::post('/coobl', 'EnigmeController@validE1');
+Route::get('/coobl', 'EnigmeController@validE1');
 
-    Route::post('/coobl', 'EnigmeController@validE2');
+    Route::post('/refbl', 'EnigmeController@validE2');  
 
-        Route::post('/refbl', 'EnigmeController@validE3');
+        Route::post('/inibl', 'EnigmeController@validE3');
             
-            Route::post('/inibl', 'EnigmeController@validE4');
+            Route::post('/vidbl', 'EnigmeController@validE4');
 
 //                 Route::post('/vidbl', function(){
 //                     return view('ebl5');

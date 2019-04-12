@@ -1,4 +1,10 @@
 @extends('layouts.tempJaune')
+
+@section('title')
+
+
+	
+@endsection
  
 @section('content')
 	<p style="margin-bottom: 50px; font-size: 16px"><span class="border border-warning" style="padding: 15px; border-width: 3px ! important;">Enigme 1 : "Le premier mot se trouve dans votre zone de départ (indiquée sur le plan): la source de lumière vous éclairera."</span></p>

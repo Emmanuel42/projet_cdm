@@ -1,8 +1,14 @@
 @extends('layouts.tempBleuFin')
 
-@section('content')
+@section('title')
 
-	<p style="font-size: 30px; margin-bottom: 30px">Bravo ! Vous avez résolue l'énigme de la Cour des Matières. </p>
+
+	
+@endsection
+
+@section('content1')
+
+	<p style="font-size: 30px; margin-bottom: 30px">Bravo ! Vous avez résolu l'énigme de la Cour des Matières. </p>
 	<p style="margin-bottom: 30px">Regardez bien la vidéo ci-dessous pour connaitre votre prochaine destination.</p>
 
 

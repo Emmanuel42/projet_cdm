@@ -4,6 +4,8 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 use App\Enigme;
+use Illuminate\Notifications\Action;
+use Illuminate\Support\Facades\Redirect;
 
 class EnigmeController extends Controller
 {
@@ -36,7 +38,7 @@ class EnigmeController extends Controller
      */
     public function create()
     {
-        return view('ebl2');
+        //return view('ebl2');
     }
 
     /**
@@ -47,20 +49,27 @@ class EnigmeController extends Controller
      */
     public function store(Request $request)
     {
+          
         
-        $valider = $request->input('enigme1bl');
-        
-        if ($valider == 'DESIGN'){
-            
-            return view('ebl2');
-            
-        }
-        else {
-            
-            return view('ebl1');
-            
-        }     
-        
+   }
+   
+   public function validE1(Request $request){
+       
+       $valider1 = $request->input('enigme1bl');
+       
+       if ($valider1 == 'DESIGN'){
+          
+           //$numero++;
+           //A voir: mettre variables globales dans un fichier.php séparé/ utiliser namespace / use
+           //return view($page[$numero]);  
+           return view('ebl2');
+           
+       }
+       else {
+           
+           return redirect()->back();
+           
+       }     
    }
    
    public function validE2(Request $request){
