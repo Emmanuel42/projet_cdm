@@ -12,11 +12,16 @@
 @endsection
 
 @section('reminder')
-
-	<p style="text-align: center; margin-bottom: 5px">Rappel : Enigme 1 = DESIGN</p>
-	<p style="text-align: center; margin-bottom: 5px; margin-left:103px">Enigme 2 = TECHNOLOGIE</p>
-	<p style="text-align: center; margin-bottom: 35px; margin-left:75px">Enigme 3 = ACADEMIE</p>
-
+	<div class="row">
+		<div class="col text-right"><p >Enigme 1 : </p></div>
+		<div class="col text-left"><p >DESIGN</p></div>
+		<div class="w-100"></div>
+		<div class="col text-right"><p>Enigme 2 : </p></div>
+		<div class="col text-left"><p>TECHNOLOGIE</p></div>
+		<div class="w-100"></div>
+		<div class="col text-right"><p>Enigme 3 : </p></div>
+		<div class="col text-left"><p style="margin-bottom: 45px">ACADEMIE</p></div>	
+	</div>
 @endsection
 
 @section('content2')
@@ -25,7 +30,7 @@
 
 	        <form action="{{ action('EnigmeController@validE4') }}" method="POST" > {{csrf_field()}}				
 				<label for="enigme4bl">Mot de passe</label><br>
-				<input id="enigme4bl" type="text" name="enigme4bl" placeholder="Votre réponse">
+				<input id="enigme4bl" type="text" name="enigme4bl" placeholder="Votre réponse" style="margin-right:5px; margin-bottom:5px">
 				<button type="submit">Valider</button>
 			</form>
 
