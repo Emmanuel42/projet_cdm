@@ -2,7 +2,7 @@
 
 @section('title')
 
-<p>Equipe {{ $equipe->couleur }} n° {{ $equipe->id }} </p>
+<p>Equipe {{ $equipe->id }} :  {{ $equipe->couleur }} </p>
 	
 @endsection
  
@@ -13,7 +13,7 @@
 			<p style="font-size: 18px;">Enigme 1 : "Le premier mot se trouve dans votre zone de départ (indiquée sur le plan): la source de lumière vous éclairera."</p>
 		</div>
 		<div class="form">
-    		<form action="{{ action('EnigmeController@validE1') }}" method="POST">
+    		<form action="{{ action('EnigmeControllerBl@validE1') }}" method="POST">
         		{{ csrf_field() }}
         		<label for="enigme1bl">Lorsque vous avez trouvé le mot, inscrivez-le ci-dessous en MAJUSCULES puis validez pour passer à l'énigme suivante.</label><br>
     			<input id="enigme1bl" type="text" name="enigme1bl" placeholder="Votre réponse" style="margin-right:5px; margin-bottom:5px">
@@ -21,4 +21,5 @@
 			</form>
 		</div>
 	</div>
+	
 @endsection

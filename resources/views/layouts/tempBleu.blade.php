@@ -5,7 +5,6 @@
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
         <meta name="csrf-token" content="{{ csrf_token() }}">
         
-        
 		<link href="{{ asset('../public/css/app.css') }}" rel="stylesheet" type="text/css" >
         <script type="text/javascript" src="{{ asset('../public/js/app.js') }}"></script>
         <link rel="stylesheet" type="text/css" href="../public/bootstrap/css/bootstrap.css">

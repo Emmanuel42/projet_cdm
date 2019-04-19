@@ -1,9 +1,23 @@
 @extends('layouts.tempJauneFin')
 
-@section('content')
+@section('title')
 
-	<p style="font-size: 30px; margin-bottom: 30px">Bravo ! Vous avez trouvé les 3 mots-clés. </p>
-	<p style="margin-bottom: 30px">Veuillez entrer les initiales de ces mots dans l'ordre où vous les avez trouvés pour débloquer la vidéo.</p> 
-	<p style="margin-bottom: 30px">Regardez-la bien, elle vous donnera de précieux indices pour retrouver Théo.</p>
+
+	
+@endsection
+
+@section('content1')
+
+
+	<p style="font-size: 30px; margin-bottom: 30px">Bravo ! Vous avez résolu l'énigme de la Cour des Matières. </p>
+	<p style="margin-bottom: 30px">Regardez bien la vidéo ci-dessous pour connaitre votre prochaine destination.</p>
+
+
+			<div class="embed-responsive embed-responsive-16by9">
+				<iframe class="embed-responsive-item" width="560" height="315" src="https://www.youtube.com/embed/Wq4tyDRhU_4" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    		</div>
+    		
+
+	<p style ="text-align: center">Merci d'avoir joué ! </p>
 
 @endsection

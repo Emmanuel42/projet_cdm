@@ -18,7 +18,7 @@
   		 
     	 	<div> 
     	 
-    	 		<h1 class="titre" style="text-align: center; padding-bottom: 20px; text-decoration: #428bca underline">Enigme cour des matières</h1>  
+    	 		<h1 class="titre" style="text-align: center; padding-bottom: 20px; text-decoration: #428bca underline">Enigme de la cour des matières</h1>  
 			
         			<div class="contenu" style="text-align: center; margin-bottom:20px">
     	  

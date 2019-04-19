@@ -7,7 +7,7 @@ use App\Enigme;
 use Illuminate\Notifications\Action;
 use Illuminate\Support\Facades\Redirect;
 
-class EnigmeController extends Controller
+class EnigmeControllerJa extends Controller
 {
     
 //     public function enigmeVal(EnigmeValRequest $request)
@@ -18,7 +18,7 @@ class EnigmeController extends Controller
         
 //         $enigme->save();
         
-//         return view ('ebl2');
+//         return view ('ero2');
 //     }
     
 /**
@@ -38,7 +38,7 @@ class EnigmeController extends Controller
      */
     public function create()
     {
-        //return view('ebl2');
+        //return view('ero2');
     }
 
     /**
@@ -55,14 +55,14 @@ class EnigmeController extends Controller
    
    public function validE1(Request $request){
        
-       $valider1 = $request->input('enigme1bl');
+       $valider1 = $request->input('enigme1ja');
        
        if ($valider1 == 'DESIGN'){
           
            //$numero++;
            //A voir: mettre variables globales dans un fichier.php séparé/ utiliser namespace / use
            //return view($page[$numero]);  
-           return view('ebl2');
+           return view('eja2');
            
        }
        else {
@@ -74,48 +74,48 @@ class EnigmeController extends Controller
    
    public function validE2(Request $request){
        
-       $valider2 = $request->input('enigme2bl');
+       $valider2 = $request->input('enigme2ja');
        
        if ($valider2 == 'TECHNOLOGIE'){
            
-           return view('ebl3');
+           return view('eja3');
            
        }
        else {
            
-           return view('ebl2');
+           return view('eja2');
            
        }
    }
    
    public function validE3(Request $request){
        
-       $valider3 = $request->input('enigme3bl');
+       $valider3 = $request->input('enigme3ja');
        
        if ($valider3 == 'ACADEMIE'){
            
-           return view('ebl4');
+           return view('eja4');
            
        }
        else {
            
-           return view('ebl3');
+           return view('eja3');
            
        }
    }
    
    public function validE4(Request $request){
        
-       $valider4 = $request->input('enigme4bl');
+       $valider4 = $request->input('enigme4ja');
        
        if ($valider4 == 'DTA'){
            
-           return view('ebl5');
+           return view('eja5');
            
        }
        else {
            
-           return view('ebl4');
+           return view('eja4');
            
        }
    }
@@ -165,3 +165,4 @@ class EnigmeController extends Controller
         //
     }
 }
+

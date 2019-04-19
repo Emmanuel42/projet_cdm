@@ -13,11 +13,75 @@
 //Accueil
 Route::get('/', 'EquipeController@index');
 
+//route équipe bleue
 Route::get('/obsbl', 'EquipeController@equipeBl');
 Route::post('/obsbl', 'EquipeController@equipeBl');
 
-// Route::get('/coobl', 'EquipeController@equipeBl2');
-// Route::post('/coobl', 'EquipeController@equipeBl2');
+Route::post('/coobl', 'EnigmeControllerBl@validE1');
+Route::get('/coobl', 'EnigmeControllerBl@validE1');
+
+Route::post('/refbl', 'EnigmeControllerBl@validE2');
+
+Route::post('/inibl', 'EnigmeControllerBl@validE3');
+
+Route::post('/vidbl', 'EnigmeControllerBl@validE4');
+
+
+//route équipe rouge
+Route::get('/obsro', 'EquipeController@equipeRo');
+Route::post('/obsro', 'EquipeController@equipeRo');
+
+Route::post('/cooro', 'EnigmeControllerRo@validE1');
+Route::get('/cooro', 'EnigmeControllerRo@validE1');
+
+Route::post('/refro', 'EnigmeControllerRo@validE2');
+
+Route::post('/iniro', 'EnigmeControllerRo@validE3');
+
+Route::post('/vidro', 'EnigmeControllerRo@validE4');
+
+
+//route équipe verte
+Route::get('/obsve', 'EquipeController@equipeVe');
+Route::post('/obsve', 'EquipeController@equipeVe');
+
+Route::post('/coove', 'EnigmeControllerVe@validE1');
+Route::get('/coove', 'EnigmeControllerVe@validE1');
+
+Route::post('/refve', 'EnigmeControllerVe@validE2');
+
+Route::post('/inive', 'EnigmeControllerVe@validE3');
+
+Route::post('/vidve', 'EnigmeControllerVe@validE4');
+
+
+//route équipe jaune
+Route::get('/obsja', 'EquipeController@equipeJa');
+Route::post('/obsja', 'EquipeController@equipeJa');
+
+Route::post('/cooja', 'EnigmeControllerJa@validE1');
+Route::get('/cooja', 'EnigmeControllerJa@validE1');
+
+Route::post('/refja', 'EnigmeControllerJa@validE2');
+
+Route::post('/inija', 'EnigmeControllerJa@validE3');
+
+Route::post('/vidja', 'EnigmeControllerJa@validE4');
+
+
+//route équipe violette
+Route::get('/obsvi', 'EquipeController@equipeVi');
+Route::post('/obsvi', 'EquipeController@equipeVi');
+
+Route::post('/coovi', 'EnigmeControllerVi@validE1');
+Route::get('/coovi', 'EnigmeControllerVi@validE1');
+
+Route::post('/refvi', 'EnigmeControllerVi@validE2');
+
+Route::post('/inivi', 'EnigmeControllerVi@validE3');
+
+Route::post('/vidvi', 'EnigmeControllerVi@validE4');
+
 
 Route::resource('enigmes', 'EnigmeController');
 Route::resource('equipes', 'EquipeController');
@@ -29,89 +93,3 @@ Auth::routes();
 Route::get('enigme', 'EnigmeController@create');
 Route::post('enigme', 'EnigmeController@store');
 
-
-//route équipe bleue
-Route::post('/coobl', 'EnigmeController@validE1');
-Route::get('/coobl', 'EnigmeController@validE1');
-
-    Route::post('/refbl', 'EnigmeController@validE2');  
-
-        Route::post('/inibl', 'EnigmeController@validE3');
-            
-            Route::post('/vidbl', 'EnigmeController@validE4');
-
-//                 Route::post('/vidbl', function(){
-//                     return view('ebl5');
-//                 });
-    
-//route équipe rouge
-Route::post('/obsro', function(){
-     return view('ero1');
-});
-    Route::post('/cooro', function(){
-        return view('ero2');
-    });
-        Route::post('/refro', function(){
-            return view('ero3');
-        });
-            Route::post('/iniro', function(){
-                return view('ero4');
-            });
-                Route::post('/vidro', function(){
-                    return view('ero5');
-                });
-
-//route équipe verte
-Route::post('/obsve', function(){
-     return view('eve1');
-});
-    Route::post('/coove', function(){
-        return view('eve2');
-    });
-        Route::post('/refve', function(){
-            return view('eve3');
-        });
-            Route::post('/inive', function(){
-                return view('eve4');
-            });
-                Route::post('/vidve', function(){
-                    return view('eve5');
-                });
-
-//route équipe jaune
-Route::post('/obsja', function(){
-     return view('eja1');
-});
-    Route::post('/cooja', function(){
-        return view('eja2');
-    });
-        Route::post('/refja', function(){
-            return view('eja3');
-        });
-            Route::post('/inija', function(){
-                return view('eja4');
-            });
-                Route::post('/vidja', function(){
-                    return view('eja5');
-                });
-
-//route équipe violette
-Route::post('/obsvi', function(){
-     return view('evi1');
-});
-    Route::post('/coovi', function(){
-        return view('evi2');
-    });
-        Route::post('/refvi', function(){
-            return view('evi3');
-        });
-            Route::post('/inivi', function(){
-                return view('evi4');
-            });
-                Route::post('/vidvi', function(){
-                    return view('evi5');
-                });
-    
-    
-// Route::get('enigmes', 'EnigmeController@create');
-// Route::post('enigmes', 'EnigmeController@store');
