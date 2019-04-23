@@ -10,16 +10,6 @@ use Illuminate\Support\Facades\Redirect;
 class EnigmeControllerBl extends Controller
 {
     
-//     public function enigmeVal(EnigmeValRequest $request)
-//     {
-//         $enigme = new Enigme;
-        
-//         $enigme->code_reponse = $request->code_reponse;
-        
-//         $enigme->save();
-        
-//         return view ('ebl2');
-//     }
     
 /**
      * Display a listing of the resource.
