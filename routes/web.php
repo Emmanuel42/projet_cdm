@@ -83,12 +83,10 @@ Route::post('/inivi', 'EnigmeControllerVi@validE3');
 Route::post('/vidvi', 'EnigmeControllerVi@validE4');
 
 
-Route::resource('enigmes', 'EnigmeController');
-Route::resource('equipes', 'EquipeController');
+// Route::resource('enigmes', 'EnigmeController');
+// Route::resource('equipes', 'EquipeController');
 
 Auth::routes();
-
-//Route::get('/home', 'HomeController@index')->name('home');
 
 Route::get('enigme', 'EnigmeController@create');
 Route::post('enigme', 'EnigmeController@store');

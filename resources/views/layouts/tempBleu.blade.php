@@ -24,7 +24,7 @@
     	 		<div class="consignes" style="text-align: center">
 					<div class="row-md-auto" style="text-align: center">
 							<p><a style = "text-decoration: black underline; font-size: 15px">Votre objectif :  </a></p>
-							<p style = "text-decoration: black underline; font-size: 15px">Trouver <strong>3 mots-clés</strong> qui vous permettront de débloquer une vidéo. 
+							<p>Trouver <strong>3 mots-clés</strong> qui vous permettront de débloquer une vidéo. 
 							Cette dernière vous mettra sur la piste de Théo.</p>
 					</div>
 					<div class="row-md-auto" style="text-align: center">
@@ -32,7 +32,7 @@
 							<p>Vous devez tout d'abord rejoindre votre point de départ indiqué sur le plan ci-dessous en fonction 
 							 la couleur de votre équipe.</p>
 					</div>
-					<div class="row-md-auto" style="text-align: center; margin-bottom:30px">
+					<div class="row-md-auto" style="text-align: center; margin-bottom:15px">
 							<p><a style = "text-decoration: black underline; font-size: 15px">Note importante :  </a></p>
 							<p>Vous n'avez pas accès aux bâtiments, toutes les énigmes peuvent être résolues dans la cour des matières.</p>
     				</div>

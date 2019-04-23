@@ -17,7 +17,8 @@
 
 	<div class="col justify-content-center">
 		<div class="border" style="border: 3px solid purple ! important; padding-top: 10px; margin-bottom:30px">
-			<p style="font-size: 18px;">Enigme 2 : "A l'aide du plan ci-dessous, trouver le point de coordonnées (4;5) sur la grille végétale."</p>
+			<p style="font-size: 18px; text-align:center">Enigme 2 : </p>
+			<p style="font-size: 16px">"A l'aide du plan ci-dessous, trouver le point de coordonnées (4;5) sur la grille végétale."</p>
 		</div>
 		<div class="form">
     		<form action="{{ action('EnigmeControllerVi@validE2') }}" method="POST">

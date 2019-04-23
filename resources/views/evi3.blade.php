@@ -14,15 +14,16 @@
 		<div class="col text-left"><p >DESIGN</p></div>
 		<div class="w-100"></div>
 		<div class="col text-right"><p style="margin-bottom: 5px">Enigme 2 : </p></div>
-		<div class="col text-left"><p style="margin-bottom: 45px">TECHNOLOGIE</p></div>			
+		<div class="col text-left"><p style="margin-bottom: 12px">TECHNOLOGIE</p></div>			
 	</div>
 @endsection
 
 @section ('content')
 
 	<div class="col justify-content-center">
-		<div class="border" style="border: 3px solid purple ! important; padding-top: 10px; margin-bottom:30px">
-			<p style="font-size: 18px;">Enigme 3 : "Sur les 4, seules les 2 du milieu comptent. Ici, la première est première, la 6ème est 7ème, la 7ème est 3ème, la 22ème est 6ème, la 23ème est 5ème, la 28ème est seconde, la 29ème est 4ème et la 30ème est 8ème. L'un des points de départ des autres équipes peut être le début de la solution."</p>
+		<div class="border" style="border: 3px solid purple ! important; padding-top: 5px; margin-bottom:12px">
+			<p style="font-size: 18px; text-align:center">Enigme 3 : </p>
+			<p style="font-size: 16px">"Sur les 4, seules les 2 du milieu comptent. Ici, la première est première, la 6ème est 7ème, la 7ème est 3ème, la 22ème est 6ème, la 23ème est 5ème, la 28ème est seconde, la 29ème est 4ème et la 30ème est 8ème. L'un des points de départ des autres équipes peut être le début de la solution."</p>
 		</div>
 		<div class="form">
     		<form action="{{ action('EnigmeControllerVi@validE3')}}" method="POST">

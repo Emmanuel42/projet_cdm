@@ -9,7 +9,7 @@
 @section('reminder')
 	<div class="row">
 		<div class="col text-right"><p >Enigme 1 : </p></div>
-		<div class="col text-left"><p style="margin-bottom: 45px">DESIGN</p></div>
+		<div class="col text-left"><p style="margin-bottom: 25px">DESIGN</p></div>
 	</div>
 @endsection
 
@@ -17,7 +17,8 @@
 
 	<div class="col justify-content-center">
 		<div class="border border-primary" style="border-width: 3px ! important; padding-top: 10px; margin-bottom:30px">
-			<p style="font-size: 18px;">Enigme 2 : "A l'aide du plan ci-dessous, trouver le point de coordonnées (3;4) sur la grille végétale."</p>
+			<p style="font-size: 18px; text-align:center">Enigme 2 : </p>
+			<p style="font-size: 16px">"A l'aide du plan ci-dessous, trouver le point de coordonnées (3;4) sur la grille végétale."</p>
 		</div>
 		<div class="form">
     		<form action="{{ action('EnigmeControllerBl@validE2') }}" method="POST">

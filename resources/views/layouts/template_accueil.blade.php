@@ -3,11 +3,14 @@
     <head>
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-<!--         <meta name="viewport" content="width=device-width, initial-scale=1"> -->
+
+<!-- 		<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"> -->
 
         <title>Enigme de la Cour des Matières</title>
 
 <!--         <link href="https://fonts.googleapis.com/css?family=Nunito:200,600" rel="stylesheet"> -->
+
+		<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
         
         <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
       	<link type="text/css" rel="stylesheet" href="css/materialize.min.css"  media="screen,projection"/>
@@ -15,19 +18,19 @@
 
 	</head>
 	
-	<body style="background-color: ">
+	<body style="background: no-repeat center/100% url('img/fontlab.jpg')">
 		
 		<div class="container center-align">
 			
 			<div class="title">
 			
-                <h2 style="text-decoration:underline black">Enigme de la Cour des Matières</h2>
+                <h3 style="color: white; text-decoration:underline white">Enigme de la Cour des Matières</h3>
                     
             </div>
             
             <div>
-            <p style = "text-decoration: underline black">But du jeu :</p> 
-            <p>Vous devez trouver 3 mots-clés qui vous donneront le mot de passe nécessaire pour débloquer une vidéo.
+            <p style = "color: white; text-decoration: underline white; font-size: 18px">But du jeu :</p> 
+            <p style = "color: white; font-size: 16px">Vous devez trouver 3 mots-clés qui vous donneront le mot de passe nécessaire pour débloquer une vidéo.
             Pour trouver les mots, vous devrez résoudre 3 énigmes.
             Vous n'avez pas accès aux bâtiments. Toutes les énigmes peuvent être résolues dans la Cour des Matières.
             </p>
@@ -36,11 +39,11 @@
             
             <div>
             
-            <p>Avant de commencer, vous devez choisir la couleur de votre équipe.</p>
+            <p style = "color: white;">Avant de commencer, vous devez choisir la couleur de votre équipe.</p>
             
 			<form action="{{ url('/obsbl') }}" method="POST">
 				{{ csrf_field() }}
-            	<input class="waves-effect waves-light btn-large blue" style="width: 300px; margin-bottom:10px" type="submit" name="equipebl" value="Equipe Bleue">	
+            	<input class="waves-effect waves-light btn-large blue white-text" style="width: 300px; margin-bottom:10px;" type="submit" name="equipebl" value="Equipe Bleue">
             </form>
           
             <form action="{{ url('/obsro') }}" method="POST">
@@ -75,6 +78,12 @@
 		<script type="text/javascript" src="js/materialize.min.js"></script>
 
 	</body>
+	
+	<footer>
+	
+		<i class="far fa-copyright"></i>2019
+	
+	</footer>
 
 
 </html>

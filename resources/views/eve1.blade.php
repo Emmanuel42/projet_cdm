@@ -10,7 +10,8 @@
 
 	<div class="col justify-content-center">
 		<div class="border border-success" style="border-width: 3px ! important; padding-top: 10px; margin-bottom:30px">
-			<p style="font-size: 18px;">Enigme 1 : "Le premier mot se trouve dans votre zone de départ (indiquée sur le plan): la source de lumière vous éclairera."</p>
+			<p style="font-size: 18px; text-align:center">Enigme 1 : </p>
+			<p style="font-size: 16px">"Le premier mot se trouve dans votre zone de départ (indiquée sur le plan): la source de lumière vous éclairera."</p>
 		</div>
 		<div class="form">
     		<form action="{{ action('EnigmeControllerVe@validE1') }}" method="POST">
